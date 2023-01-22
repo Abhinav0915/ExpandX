@@ -36,11 +36,10 @@ class _loginState extends State<login> with SingleTickerProviderStateMixin {
                   height: 20.0,
                 ),
                 ToggleSwitch(
-
                   minWidth: 150.0,
                   initialLabelIndex: 0,
                   cornerRadius: 20.0,
-                  activeBgColor: [Colors.red],
+                  activeBgColor: [Colors.black],
                   activeFgColor: Colors.white,
                   inactiveBgColor: Colors.grey,
                   inactiveFgColor: Colors.white,
@@ -136,14 +135,18 @@ class _loginState extends State<login> with SingleTickerProviderStateMixin {
                     child: const Text('Login'),
                   ),
                 ),
-                //forgot password
                 const SizedBox(
-                  height: 20.0,
+                  height: 10.0,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const [
-                    Text('Forgot Password?'),
+                    Text(
+                      'Forgot Password?',
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
+                    ),
                   ],
                 ),
               ],
