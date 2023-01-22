@@ -98,8 +98,6 @@ class _signupState extends State<signup> with SingleTickerProviderStateMixin {
                       BoxShadow(
                         color: Colors.black12,
                         offset: Offset(0, 2),
-                        // blurRadius: 5.0,
-                        // spreadRadius: 5.0,
                       ),
                     ],
                     color: Colors.white,
@@ -113,7 +111,7 @@ class _signupState extends State<signup> with SingleTickerProviderStateMixin {
                     decoration: InputDecoration(
                       suffixIcon: Icon(Icons.visibility_off),
                       isDense: true,
-                      hintText: 'Password',
+                      hintText: 'Email Address',
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(10.0)),
                       ),
@@ -133,7 +131,8 @@ class _signupState extends State<signup> with SingleTickerProviderStateMixin {
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                     ),
-                    child: const Text('SIGN UP'),
+                    child: const Text(
+                      'SIGN UP',),
                   ),
                 ),
                 const SizedBox(

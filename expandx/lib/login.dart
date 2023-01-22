@@ -1,4 +1,5 @@
 import 'package:expandx/signup.dart';
+import 'package:expandx/transact.dart';
 import 'package:flutter/material.dart';
 import 'package:toggle_switch/toggle_switch.dart';
 
@@ -125,7 +126,12 @@ class _loginState extends State<login> with SingleTickerProviderStateMixin {
                 Container(
                   width: 180.0,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => transact()),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       primary: Color.fromARGB(255, 216, 114, 74),
                       shape: RoundedRectangleBorder(
@@ -144,6 +150,7 @@ class _loginState extends State<login> with SingleTickerProviderStateMixin {
                     Text(
                       'Forgot Password?',
                       style: TextStyle(
+                        decoration: TextDecoration.underline,
                         color: Colors.black,
                       ),
                     ),
