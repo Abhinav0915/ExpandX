@@ -1,3 +1,4 @@
+import 'package:expandx/savetax.dart';
 import 'package:expandx/signup.dart';
 import 'package:expandx/transact.dart';
 import 'package:flutter/material.dart';
@@ -129,7 +130,8 @@ class _loginState extends State<login> with SingleTickerProviderStateMixin {
                     onPressed: () {
                       Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (context) => transact()),
+                        MaterialPageRoute(
+                            builder: (context) => const savetax()),
                       );
                     },
                     style: ElevatedButton.styleFrom(

@@ -82,13 +82,13 @@ class _transactState extends State<transact> {
           onTap: (index) {},
         ),
         body: SafeArea(
-          child: Row(children: [
+          child: Column(children: [
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.25,
-              width: MediaQuery.of(context).size.width * 0.1,
+              height: 25.0,
+              width: MediaQuery.of(context).size.height * 0.6,
             ),
             Container(
-              width: 330,
+              width: 360,
               height: 125,
               decoration: BoxDecoration(
                 color: Color.fromARGB(255, 255, 214, 160),
@@ -130,6 +130,43 @@ class _transactState extends State<transact> {
                 ],
               ),
             ),
+            const SizedBox(
+              height: 20.0,
+            ),
+            SizedBox(
+              child: Row(
+                children: [
+                  Container(
+                    margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                    width: 500,
+                    height: 350,
+                    decoration: const BoxDecoration(
+                      color: Colors.white,
+                    ),
+                    child: const Text("Popular Funds",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        )),
+                  ),
+                  Container(
+                    width: 20.0,
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        width: 20,
+                        height: 20,
+                        decoration: const BoxDecoration(
+                          color: Colors.white,
+                        ),
+                        child: const Icon(Icons.arrow_forward_ios),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            )
           ]),
         ));
   }
