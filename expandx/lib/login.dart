@@ -130,8 +130,7 @@ class _loginState extends State<login> with SingleTickerProviderStateMixin {
                     onPressed: () {
                       Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(
-                            builder: (context) => const savetax()),
+                        MaterialPageRoute(builder: (context) => transact()),
                       );
                     },
                     style: ElevatedButton.styleFrom(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'fund.dart';
 import 'login.dart';
 import 'signup.dart';
 import 'transact.dart';
@@ -25,6 +26,7 @@ class ExpandX extends StatelessWidget {
         '/signup': (context) => const signup(),
         '/transact': (context) => transact(),
         '/savetax': (context) => const savetax(),
+        '/fund': (context) => const fund(),
       },
     );
   }

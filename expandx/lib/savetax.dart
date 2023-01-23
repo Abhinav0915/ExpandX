@@ -1,3 +1,4 @@
+import 'package:expandx/transact.dart';
 import 'package:flutter/material.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -7,6 +8,12 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: const Color.fromARGB(255, 216, 114, 74),
+      leading: InkWell(
+        onTap: () {
+          Navigator.pushNamed(context, '/transact');
+        },
+        child: Icon(Icons.arrow_back),
+      ),
       title: Container(
         decoration: const BoxDecoration(
             color: Colors.white,
@@ -14,7 +21,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
         child: TextField(
           controller: _searchController,
           decoration: const InputDecoration(
-            hintText: "Search Mutual Fund..",
+            hintText: "Search Mutual Fun..",
             prefixIcon: Icon(Icons.search),
             suffixIcon: Icon(Icons.settings),
             border: InputBorder.none,
