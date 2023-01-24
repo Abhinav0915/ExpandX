@@ -79,6 +79,28 @@ class _transactState extends State<transact> {
                   color: Colors.black,
                 ),
               ),
+              child: Column(
+                children: [
+                  Container(
+                    margin: EdgeInsets.fromLTRB(0, 15, 100, 0),
+                    child: Text(
+                      "Get Started With Ease!",
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.fromLTRB(0, 15, 60, 0),
+                    child: Text(
+                      "Make a smart move towards \na better  financial future",
+                      textAlign: TextAlign.left,
+                      style: TextStyle(),
+                    ),
+                  ),
+                ],
+              ),
             ),
             SizedBox(
               height: 20,
@@ -168,14 +190,6 @@ class _transactState extends State<transact> {
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
-                    // boxShadow: const [
-                    //   BoxShadow(
-                    //     color: Colors.grey,
-                    //     blurRadius: 1.0,
-                    //     spreadRadius: 1.0,
-                    //     offset: Offset(0.0, 0.0),
-                    //   )
-                    // ],
                   ),
                   child: Expanded(
                     child: Column(
@@ -189,15 +203,14 @@ class _transactState extends State<transact> {
                             Container(
                               height: 100.0,
                               width: 100.0,
-                              // margin: const EdgeInsets.fromLTRB(10, 0, 0, 120),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 border: Border.all(color: Colors.white),
                                 borderRadius: BorderRadius.circular(10),
                                 boxShadow: const [
                                   BoxShadow(
-                                    // color: Colors.grey,
-                                    spreadRadius: 1.0,
+                                    color: Colors.grey,
+                                    spreadRadius: 1,
                                     offset: Offset(2.0, 2.0),
                                   )
                                 ],
@@ -292,7 +305,6 @@ class _transactState extends State<transact> {
                               child: Container(
                                 height: 100.0,
                                 width: 100.0,
-                                // margin: const EdgeInsets.fromLTRB(10, 0, 0, 120),
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(10),
@@ -305,7 +317,7 @@ class _transactState extends State<transact> {
                                   ],
                                 ),
                                 child: Image.asset(
-                                  "assets/images/img4.jpeg",
+                                  "assets/images/img5.jpeg",
                                   width: 50,
                                   height: 50,
                                 ),
