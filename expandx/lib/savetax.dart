@@ -50,15 +50,295 @@ class savetax extends StatefulWidget {
 class _savetaxState extends State<savetax> {
   @override
   Widget build(BuildContext context) {
+    var row = Row(
+      children: [
+        Image.asset(
+          "assets/images/axis.png",
+          width: 50,
+          height: 50,
+        ),
+        const Expanded(
+          child: Text(" Axis Long Term Equity \n Fund-Growth"),
+        ),
+        Column(
+          children: [
+            Padding(
+              padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
+              child: Text("8.98%"),
+            ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(20, 0, 4, 30),
+              child: Text("> 3Y returns"),
+            ),
+          ],
+        ),
+      ],
+    );
+    var container = Container(
+      margin: const EdgeInsets.fromLTRB(0, 4, 0, 0),
+      width: MediaQuery.of(context).size.width * 0.93,
+      height: 75,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border.all(color: Colors.white),
+        borderRadius: BorderRadius.circular(10),
+        boxShadow: const [
+          BoxShadow(
+            color: Colors.grey,
+            blurRadius: 5.0,
+            spreadRadius: 1.0,
+            offset: Offset(0.0, 0.0),
+          )
+        ],
+      ),
+      child: Row(
+        children: [
+          Image.asset(
+            "assets/images/kotak.png",
+            width: 50,
+            height: 50,
+          ),
+          const Expanded(
+            child: Text("  Kotak Tax Saver Fund - \n  Regular Growth"),
+          ),
+          Column(
+            children: [
+              Padding(
+                padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
+                child: Text("17.45%"),
+              ),
+              Padding(
+                padding: EdgeInsets.fromLTRB(20, 0, 4, 30),
+                child: Text("> 3Y returns"),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+    var container2 = Container(
+      margin: const EdgeInsets.fromLTRB(0, 4, 0, 0),
+      width: MediaQuery.of(context).size.width * 0.93,
+      height: 75,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border.all(color: Colors.white),
+        borderRadius: BorderRadius.circular(10),
+        boxShadow: const [
+          BoxShadow(
+            color: Colors.grey,
+            blurRadius: 5.0,
+            spreadRadius: 1.0,
+            offset: Offset(0.0, 0.0),
+          )
+        ],
+      ),
+      child: Row(
+        children: [
+          Image.asset(
+            "assets/images/birla.png",
+            width: 50.0,
+            height: 50,
+          ),
+          const Expanded(
+            child: Text("  Aditya Birla Sun Life Tax \n  Relief 96 - Growth"),
+          ),
+          Column(
+            children: const [
+              Padding(
+                padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
+                child: Text("8.07%"),
+              ),
+              Padding(
+                padding: EdgeInsets.fromLTRB(20, 0, 4, 30),
+                child: Text("> 3Y returns"),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+    var container22 = container2;
+    var container3 = Container(
+      margin: const EdgeInsets.fromLTRB(0, 4, 0, 0),
+      width: MediaQuery.of(context).size.width * 0.93,
+      height: 75,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border.all(color: Colors.white),
+        borderRadius: BorderRadius.circular(10),
+        boxShadow: const [
+          BoxShadow(
+            color: Colors.grey,
+            blurRadius: 5.0,
+            spreadRadius: 1.0,
+            offset: Offset(0.0, 0.0),
+          )
+        ],
+      ),
+      child: Row(
+        children: [
+          Image.asset(
+            "assets/images/dsp.png",
+            width: 50,
+            height: 50,
+          ),
+          const Expanded(
+            child: const Text("  DSP Tax Saver Fund - \n  Growth"),
+          ),
+          Column(
+            children: [
+              Padding(
+                padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
+                child: Text("17.35%"),
+              ),
+              Padding(
+                padding: EdgeInsets.fromLTRB(20, 0, 4, 30),
+                child: Text("> 3Y returns"),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+    var container32 = container3;
+    var container4 = Container(
+      margin: const EdgeInsets.fromLTRB(0, 4, 0, 0),
+      width: MediaQuery.of(context).size.width * 0.93,
+      height: 75,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border.all(color: Colors.white),
+        borderRadius: BorderRadius.circular(10),
+        boxShadow: const [
+          BoxShadow(
+            color: Colors.grey,
+            blurRadius: 5.0,
+            spreadRadius: 1.0,
+            offset: Offset(0.0, 0.0),
+          )
+        ],
+      ),
+      child: Row(
+        children: [
+          Image.asset(
+            "assets/images/invesco.png",
+            width: 50,
+            height: 50,
+          ),
+          const Expanded(
+            child: const Text(" Invesco India Tax Plan - \n Growth"),
+          ),
+          Column(
+            children: [
+              Padding(
+                padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
+                child: Text("13.11%"),
+              ),
+              Padding(
+                padding: EdgeInsets.fromLTRB(20, 0, 4, 30),
+                child: Text("> 3Y returns"),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+    var container5 = Container(
+      margin: const EdgeInsets.fromLTRB(0, 4, 0, 0),
+      width: MediaQuery.of(context).size.width * 0.93,
+      height: 75,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border.all(color: Colors.white),
+        borderRadius: BorderRadius.circular(10),
+        boxShadow: const [
+          BoxShadow(
+            color: Colors.grey,
+            blurRadius: 5.0,
+            spreadRadius: 1.0,
+            offset: Offset(0.0, 0.0),
+          )
+        ],
+      ),
+      child: Row(
+        children: [
+          Image.asset(
+            "assets/images/canara.png",
+            width: 50,
+            height: 50,
+          ),
+          const Expanded(
+            child: const Text("  Canara Robeco Tax \n  Saver - Growth"),
+          ),
+          Column(
+            children: const [
+              Padding(
+                padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
+                child: Text("19.41%"),
+              ),
+              Padding(
+                padding: EdgeInsets.fromLTRB(20, 0, 4, 30),
+                child: Text("> 3Y returns"),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+    var container52 = container5;
+    var container6 = Container(
+      margin: const EdgeInsets.fromLTRB(0, 4, 0, 0),
+      width: MediaQuery.of(context).size.width * 0.93,
+      height: 75,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border.all(color: Colors.white),
+        borderRadius: BorderRadius.circular(10),
+        boxShadow: const [
+          BoxShadow(
+            color: Colors.grey,
+            blurRadius: 5.0,
+            spreadRadius: 1.0,
+            offset: Offset(0.0, 0.0),
+          )
+        ],
+      ),
+      child: Row(
+        children: [
+          Image.asset(
+            "assets/images/tata.png",
+            width: 50,
+            height: 50,
+          ),
+          const Expanded(
+            child: const Text("  Tata India Tax \n  Saver Fund - Growth"),
+          ),
+          Column(
+            children: const [
+              Padding(
+                padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
+                child: Text("15.27"),
+              ),
+              Padding(
+                padding: EdgeInsets.fromLTRB(20, 0, 4, 30),
+                child: Text("> 3Y returns"),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+    var container62 = container6;
     return Scaffold(
         appBar: MyAppBar(),
         body: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(15, 5, 5, 0),
+            padding: EdgeInsets.fromLTRB(15, 5, 5, 0),
             child: Column(
               children: [
                 Container(
-                  margin: const EdgeInsets.fromLTRB(0, 4, 0, 0),
+                  margin: EdgeInsets.fromLTRB(0, 4, 0, 0),
                   width: MediaQuery.of(context).size.width * 0.93,
                   height: 75,
                   decoration: BoxDecoration(
@@ -74,307 +354,32 @@ class _savetaxState extends State<savetax> {
                       )
                     ],
                   ),
-                  child: Row(
-                    children: [
-                      Image.asset(
-                        "assets/images/axis.png",
-                        width: 50,
-                        height: 50,
-                      ),
-                      const Expanded(
-                        child:
-                            const Text(" Axis Long Term Equity \n Fund-Growth"),
-                      ),
-                      Column(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
-                            child: Text("8.98%"),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(20, 0, 4, 30),
-                            child: Text("> 3Y returns"),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
+                  child: row,
                 ),
                 const SizedBox(
                   height: 15,
                 ),
-                Container(
-                  margin: const EdgeInsets.fromLTRB(0, 4, 0, 0),
-                  width: MediaQuery.of(context).size.width * 0.93,
-                  height: 75,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(color: Colors.white),
-                    borderRadius: BorderRadius.circular(10),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Colors.grey,
-                        blurRadius: 5.0,
-                        spreadRadius: 1.0,
-                        offset: Offset(0.0, 0.0),
-                      )
-                    ],
-                  ),
-                  child: Row(
-                    children: [
-                      Image.asset(
-                        "assets/images/kotak.png",
-                        width: 50,
-                        height: 50,
-                      ),
-                      const Expanded(
-                        child: const Text(
-                            "  Kotak Tax Saver Fund - \n  Regular Growth"),
-                      ),
-                      Column(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
-                            child: Text("17.45%"),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(20, 0, 4, 30),
-                            child: Text("> 3Y returns"),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
+                container,
                 const SizedBox(
                   height: 15,
                 ),
-                Container(
-                  margin: const EdgeInsets.fromLTRB(0, 4, 0, 0),
-                  width: MediaQuery.of(context).size.width * 0.93,
-                  height: 75,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(color: Colors.white),
-                    borderRadius: BorderRadius.circular(10),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Colors.grey,
-                        blurRadius: 5.0,
-                        spreadRadius: 1.0,
-                        offset: Offset(0.0, 0.0),
-                      )
-                    ],
-                  ),
-                  child: Row(
-                    children: [
-                      Image.asset(
-                        "assets/images/birla.png",
-                        width: 50,
-                        height: 50,
-                      ),
-                      const Expanded(
-                        child: const Text(
-                            "  Aditya Birla Sun Life Tax \n  Relief 96 - Growth"),
-                      ),
-                      Column(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
-                            child: Text("8.07%"),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(20, 0, 4, 30),
-                            child: Text("> 3Y returns"),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
+                container22,
                 const SizedBox(
                   height: 15,
                 ),
-                Container(
-                  margin: const EdgeInsets.fromLTRB(0, 4, 0, 0),
-                  width: MediaQuery.of(context).size.width * 0.93,
-                  height: 75,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(color: Colors.white),
-                    borderRadius: BorderRadius.circular(10),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Colors.grey,
-                        blurRadius: 5.0,
-                        spreadRadius: 1.0,
-                        offset: Offset(0.0, 0.0),
-                      )
-                    ],
-                  ),
-                  child: Row(
-                    children: [
-                      Image.asset(
-                        "assets/images/dsp.png",
-                        width: 50,
-                        height: 50,
-                      ),
-                      const Expanded(
-                        child: const Text("  DSP Tax Saver Fund - \n  Growth"),
-                      ),
-                      Column(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
-                            child: Text("17.35%"),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(20, 0, 4, 30),
-                            child: Text("> 3Y returns"),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
+                container32,
                 const SizedBox(
                   height: 15,
                 ),
-                Container(
-                  margin: const EdgeInsets.fromLTRB(0, 4, 0, 0),
-                  width: MediaQuery.of(context).size.width * 0.93,
-                  height: 75,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(color: Colors.white),
-                    borderRadius: BorderRadius.circular(10),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Colors.grey,
-                        blurRadius: 5.0,
-                        spreadRadius: 1.0,
-                        offset: Offset(0.0, 0.0),
-                      )
-                    ],
-                  ),
-                  child: Row(
-                    children: [
-                      Image.asset(
-                        "assets/images/invesco.png",
-                        width: 50,
-                        height: 50,
-                      ),
-                      const Expanded(
-                        child:
-                            const Text(" Invesco India Tax Plan - \n Growth"),
-                      ),
-                      Column(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
-                            child: Text("13.11%"),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(20, 0, 4, 30),
-                            child: Text("> 3Y returns"),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
+                container4,
                 const SizedBox(
                   height: 15,
                 ),
-                Container(
-                  margin: const EdgeInsets.fromLTRB(0, 4, 0, 0),
-                  width: MediaQuery.of(context).size.width * 0.93,
-                  height: 75,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(color: Colors.white),
-                    borderRadius: BorderRadius.circular(10),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Colors.grey,
-                        blurRadius: 5.0,
-                        spreadRadius: 1.0,
-                        offset: Offset(0.0, 0.0),
-                      )
-                    ],
-                  ),
-                  child: Row(
-                    children: [
-                      Image.asset(
-                        "assets/images/canara.png",
-                        width: 50,
-                        height: 50,
-                      ),
-                      const Expanded(
-                        child: const Text(
-                            "  Canara Robeco Tax \n  Saver - Growth"),
-                      ),
-                      Column(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
-                            child: Text("19.41%"),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(20, 0, 4, 30),
-                            child: Text("> 3Y returns"),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
+                container52,
                 const SizedBox(
                   height: 15,
                 ),
-                Container(
-                  margin: const EdgeInsets.fromLTRB(0, 4, 0, 0),
-                  width: MediaQuery.of(context).size.width * 0.93,
-                  height: 75,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(color: Colors.white),
-                    borderRadius: BorderRadius.circular(10),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Colors.grey,
-                        blurRadius: 5.0,
-                        spreadRadius: 1.0,
-                        offset: Offset(0.0, 0.0),
-                      )
-                    ],
-                  ),
-                  child: Row(
-                    children: [
-                      Image.asset(
-                        "assets/images/tata.png",
-                        width: 50,
-                        height: 50,
-                      ),
-                      const Expanded(
-                        child: const Text(
-                            "  Tata India Tax \n  Saver Fund - Growth"),
-                      ),
-                      Column(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
-                            child: Text("15.27"),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(20, 0, 4, 30),
-                            child: Text("> 3Y returns"),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
+                container62,
               ],
             ),
           ),

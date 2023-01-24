@@ -103,19 +103,7 @@ class _transactState extends State<transact> {
             child: Column(
               children: [
                 Container(
-                    margin: EdgeInsets.fromLTRB(18, 10, 10, 0),
-                    height: 100.0,
-                    width: 320.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Color.fromARGB(255, 245, 207, 151)),
-                    child: Positioned(
-                      top: 30.0,
-                      left: 20.0,
-                      child: const Text(
-                        "sdsd",
-                      ),
-                    )),
+                    ),
               ],
             ),
           ),
@@ -179,7 +167,7 @@ class _transactState extends State<transact> {
 //             const SizedBox(
 //               height: 20.0,
 //             ),
-//             SizedBox(
+//             SizedBox(z
 //               child: Row(
 //                 children: [
 //                   Container(
