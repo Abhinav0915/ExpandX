@@ -7,6 +7,12 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Color.fromARGB(255, 216, 114, 74),
+      leading: InkWell(
+        onTap: () {
+          Navigator.pushNamed(context, '/transact');
+        },
+        child: Icon(Icons.arrow_back),
+      ),
       title: const Text('Fund Details'),
       actions: <Widget>[
         IconButton(

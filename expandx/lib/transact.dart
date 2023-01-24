@@ -11,6 +11,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       automaticallyImplyLeading: false,
       backgroundColor: const Color.fromARGB(255, 216, 114, 74),
+      
       title: Container(
         decoration: const BoxDecoration(
             color: Colors.white,
@@ -62,25 +63,7 @@ class transact extends StatefulWidget {
 class _transactState extends State<transact> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      resizeToAvoidBottomInset: false,
-      appBar: MyAppBar(),
-      body: SingleChildScrollView(
-        child: SafeArea(
-          child: Column(children: <Widget>[
-            Container(
-              margin: EdgeInsets.fromLTRB(12, 15, 12, 0),
-              height: 100.0,
-              width: 290.0,
-              decoration: BoxDecoration(
-                color: Color.fromARGB(255, 238, 183, 179),
-                borderRadius: BorderRadius.circular(10.0),
-                border: Border.all(
-                  color: Colors.black,
-                ),
-              ),
-              child: Column(
-                children: [
+    var children2 = [
                   Container(
                     margin: EdgeInsets.fromLTRB(0, 15, 100, 0),
                     child: Text(
@@ -99,13 +82,11 @@ class _transactState extends State<transact> {
                       style: TextStyle(),
                     ),
                   ),
-                ],
-              ),
-            ),
-            SizedBox(
+                ];
+    const sizedBox = const SizedBox(
               height: 20,
-            ),
-            Container(
+            );
+    var container = Container(
                 margin: EdgeInsets.fromLTRB(0, 0, 260, 0),
                 child: const Text(
                   "Popular Funds",
@@ -114,8 +95,8 @@ class _transactState extends State<transact> {
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
-                )),
-            Row(
+                ));
+    var row = Row(
               children: [
                 Container(
                   margin: const EdgeInsets.fromLTRB(10, 10, 0, 0),
@@ -167,11 +148,11 @@ class _transactState extends State<transact> {
                   ),
                 )
               ],
-            ),
-            SizedBox(
+            );
+    const sizedBox2 = const SizedBox(
               height: 20,
-            ),
-            Container(
+            );
+    var container2 = Container(
                 margin: EdgeInsets.fromLTRB(0, 0, 250, 0),
                 child: const Text(
                   "Best Categories",
@@ -180,8 +161,8 @@ class _transactState extends State<transact> {
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
-                )),
-            Row(
+                ));
+    var row2 = Row(
               children: <Widget>[
                 Container(
                   margin: const EdgeInsets.fromLTRB(10, 10, 0, 0),
@@ -330,11 +311,8 @@ class _transactState extends State<transact> {
                   ),
                 ),
               ],
-            ),
-          ]),
-        ),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
+            );
+    var bottomNavigationBar2 = BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.business),
@@ -366,7 +344,38 @@ class _transactState extends State<transact> {
             );
           }
         },
+      );
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
+      appBar: MyAppBar(),
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Column(children: <Widget>[
+            Container(
+              margin: EdgeInsets.fromLTRB(12, 15, 12, 0),
+              height: 100.0,
+              width: 290.0,
+              decoration: BoxDecoration(
+                color: Color.fromARGB(255, 238, 183, 179),
+                borderRadius: BorderRadius.circular(10.0),
+                border: Border.all(
+                  color: Colors.black,
+                ),
+              ),
+              child: Column(
+                children: children2,
+              ),
+            ),
+            sizedBox,
+            container,
+            row,
+            sizedBox2,
+            container2,
+            row2,
+          ]),
+        ),
       ),
+      bottomNavigationBar: bottomNavigationBar2,
     );
   }
 }
